@@ -46,7 +46,23 @@ return (
       <h2>Extensions List</h2>
 
       <div className="buttonGroup">
-        <Button setFilter={setFilter} />
+        <Button
+	label="Show All"
+	onClick={() => setFilter("all")}
+	active={filter === "all"}
+/>
+
+<Button
+	label="Active"
+	onClick={() => setFilter("active")}
+	active={filter === "active"}
+/>
+
+<Button
+	label="Inactive"
+	onClick={() => setFilter("inactive")}
+	active={filter === "inactive"}
+/>
       </div>
     </div>
 
