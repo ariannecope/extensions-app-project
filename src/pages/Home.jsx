@@ -12,7 +12,7 @@ export default function Home() {
   const [extensions, setExtensions] = useState(cardData);
 
   // FILTER RULE (what the user wants to see)
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("active");
 
   // REMOVE AN ITEM
   const deleteCard = (id) => {
